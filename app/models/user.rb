@@ -1,3 +1,5 @@
-class User
+module App
+  class User
 
+  end
 end
