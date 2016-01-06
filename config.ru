@@ -21,6 +21,18 @@ def get(path, &block)
   Routes['GET'][path] = block
 end
 
+class MyLog
+  def initialize(app)
+    @app = app
+  end
+
+  def call(env)
+    puts "Calling: " + env['PATH_INFO']
+    @app.call(env)
+  end
+end
+
+use MyLog
 run MyApp.new
 
 get "/hi" do
