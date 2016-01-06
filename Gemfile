@@ -4,4 +4,6 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+gem 'shotgun', '~> 0.9', '>=0.9.1'
+
 gem 'byebug', '~> 8.2', '>= 8.2.1'
