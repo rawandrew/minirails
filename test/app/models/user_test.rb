@@ -6,4 +6,9 @@ class UserTest < Minitest::Test
     assert_equal 1, user.id, "The user must have an id"
     assert_equal "Jack", user.name, "The user must have a name"
   end
+
+  def test_find
+    user = App::User.find(1)
+    assert_equal 1, user.id, "It finds an user in the db using an id"
+  end
 end
