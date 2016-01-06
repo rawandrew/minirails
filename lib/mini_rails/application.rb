@@ -8,6 +8,11 @@ module MiniRails
 
       controller_name, action_name = route(request.path_info)
       controller_class = load_controller_class(controller_name)
+      controller = controller_class.new
+      controller.request = request
+      controller.response = response
+      controller.process action_name
+
       response.finish
     end
 
