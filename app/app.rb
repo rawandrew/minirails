@@ -1,6 +1,4 @@
-require "models/user"
-require "controllers/application_controller"
-require "controllers/home_controller"
+require "app/models/user"
 require "mini_rails"
 
 module App
