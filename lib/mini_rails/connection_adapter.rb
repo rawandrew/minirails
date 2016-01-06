@@ -12,7 +12,7 @@ module MiniRails
     end
 
     def columns(table_name)
-      @db.table_info(table_name).map { |info|  info["name"].to_sym }
+      @db.table_info(table_name).map { |info| info["name"].to_sym }
     end
 
   end
