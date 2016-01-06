@@ -1,7 +1,5 @@
-module App
-  class HomeController < ApplicationController
-    def index
+class HomeController < ApplicationController
+  def index
 
-    end
   end
 end
