@@ -7,7 +7,7 @@ class MiniRails::ApplicationTest < Minitest::Test
   def test_routing
     assert_equal ['home', 'index'], @app.route('/home/index'), "It finds the right controller and action"
     assert_equal ['home', 'index'], @app.route('/'), "It finds the right controller and action"
-    assert_equal ['users', 'index'], @app.route('/users/'), "It finds the right controller and action"
+    assert_equal ['users', 'index'], @app.route('/users'), "It finds the right controller and action"
     assert_equal ['users', 'show'], @app.route('/users/show'), "It finds the right controller and action"
   end
 
