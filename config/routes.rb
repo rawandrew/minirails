@@ -1,4 +1,4 @@
-Routes = Router.new do
+ROUTES = Router.new do
   match '/' => 'home#index'
   match '/home/index' => 'home#index'
   match '/echo' => 'echo#index'

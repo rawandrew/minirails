@@ -17,8 +17,7 @@ module MiniRails
     end
 
     def route(path)
-      _, controller, action = path.split('/')
-      [controller || 'home', action || 'index' ]
+      ROUTES.route(path)
     end
 
     def load_controller_class(controller_name)
