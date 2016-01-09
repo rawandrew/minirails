@@ -8,11 +8,11 @@ class HomeController < ApplicationController
   end
 
   def header
-    response.write "<h1>Mini Rails App</h1>"
+    render :header
   end
 
   def footer
-    response.write "<p>Copyright &copy Mini Rails 2016</p>"
+    render :footer
   end
 
 end
