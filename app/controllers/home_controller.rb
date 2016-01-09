@@ -3,7 +3,8 @@ class HomeController < ApplicationController
   after_action :footer
 
   def index
-    response.write "<p>Hello from the Home Controller</p>"
+    @message = "Hello from the home controller"
+    render :index
   end
 
   def header
@@ -11,7 +12,7 @@ class HomeController < ApplicationController
   end
 
   def footer
-    response.write "<p>Copyright Mini Rails 2016</p>"
+    response.write "<p>Copyright &copy Mini Rails 2016</p>"
   end
 
 end

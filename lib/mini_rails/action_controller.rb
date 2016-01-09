@@ -1,4 +1,5 @@
 require "mini_rails/filters"
+require "mini_rails/rendering"
 
 module ActionController
 
@@ -12,5 +13,6 @@ module ActionController
 
   class Base < Metal
     include Filters
+    include Rendering
   end
 end
